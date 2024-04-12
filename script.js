@@ -13,7 +13,7 @@ const initialCount = 20;
  const maxPlants = area / minSpace;
  console.log(maxPlants) // 98.1718-total plant approx
 
-  //Area needed for 20 plants in week 1:
+//Area needed for 20 plants in week 1:
   const areaWeek1 = initialCount * minSpace ;
   console.log (areaWeek1) // 16 sqm
 
@@ -59,10 +59,28 @@ console.log(totalPlants1)// 49.085 plants
 //This condition should be met if the plant count is between 50% and
 //80% of the maximum capacity of the garden after the given number of weeks.
 console.log("========Control Flow=========")
-let n = 52; // say week 3 plant count
-if (n < totalPlants1){
+let n1 = 20; // week1
+if (n1 < totalPlants1){
     console.log("Plant more");
-} else if (n > totalPlants1 && n < totalPlants){
+} else if (n1 > totalPlants1 && n1 < totalPlants){
+    console.log("Just monitor the plants.");
+} else {
+    console.log("Prune the Plants");
+}
+
+let n2 = 50; // week2
+if (n2 < totalPlants1){
+    console.log("Plant more");
+} else if (n2 > totalPlants1 && n2 < totalPlants){
+    console.log("Just monitor the plants.");
+} else {
+    console.log("Prune the Plants");
+}
+
+let n3 = 81; // week3
+if (n3 < totalPlants1){
+    console.log("Plant more");
+} else if (n3 > totalPlants1 && n3 < totalPlants){
     console.log("Just monitor the plants.");
 } else {
     console.log("Prune the Plants");
