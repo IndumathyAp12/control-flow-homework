@@ -24,3 +24,12 @@ const initialCount = 20;
  //week 3 : 80 plants
  const areaWeek3 = 80 * 0.8;
  console.log(areaWeek3) //64
+
+//Calculate 80% of the maximum capacity of the garden.
+const maxLimitofplants = 0.8; //80% of the garden
+const  maxCapacityallowed = maxLimitofplants * area;
+console.log(maxCapacityallowed) // 62.83
+
+ //Pruned,to stop them from exceeding the capacity of the garden.
+//This condition should be met if the plant count 
+//after the given number of weeks is greater than 
