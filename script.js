@@ -59,7 +59,7 @@ console.log(totalPlants1)// 49.085 plants
 //This condition should be met if the plant count is between 50% and
 //80% of the maximum capacity of the garden after the given number of weeks.
 console.log("========Control Flow=========")
-let n1 = 20; // week1
+let n1 = 20; // week1 plants count
 if (n1 < totalPlants1){
     console.log("Plant more");
 } else if (n1 > totalPlants1 && n1 < totalPlants){
@@ -68,7 +68,7 @@ if (n1 < totalPlants1){
     console.log("Prune the Plants");
 }
 
-let n2 = 50; // week2
+let n2 = 50; // week2 plants count
 if (n2 < totalPlants1){
     console.log("Plant more");
 } else if (n2 > totalPlants1 && n2 < totalPlants){
@@ -77,7 +77,7 @@ if (n2 < totalPlants1){
     console.log("Prune the Plants");
 }
 
-let n3 = 81; // week3
+let n3 = 81; // week3 plants count
 if (n3 < totalPlants1){
     console.log("Plant more");
 } else if (n3 > totalPlants1 && n3 < totalPlants){
@@ -97,6 +97,32 @@ if (n3 < totalPlants1){
  const newGardenarea = newPlants * minSpace ;
  console.log(newGardenarea); // 80 sq.meters for week 1 in newgarden.
 
-//calculate space needed for the 100 plants at the end of 10 weeks
+
+//calculate Total no of plants at the end of 10 weeks 
+//considering it doubles in each week
+
+let a = 100;
+for  (i = 1 ; i < 10 ; i++) {
+   a = 2*(a) ;
+   console.log(a)
+}
+ // 51200 plants
+
+// calculate Area needed for the 51200 plants 
+ const newPlants2 = 51200;
+ const newGardenarea2 = newPlants2 * minSpace;
+ console.log(newGardenarea2) // 40960 sqm
+
+ // Additional space needed than earlier 
+const addSpace = newGardenarea2 - area ;
+console.log(addSpace) // 40881.4625 sqm
+
+//Calculate radius of the Additional space
+const newRadius = Math.sqrt(addSpace / PI);
+console.log(newRadius); //114.076
+
+
+
+
 
 
