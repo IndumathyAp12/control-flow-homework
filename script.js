@@ -86,6 +86,7 @@ if (n3 < totalPlants1){
     console.log("Prune the Plants");
 }
 
+console.log("=================================")
 // Part 2: Thinking Bigger
 //The amount of additional space that would be required 
 // if the scientists were to start with 100 plants, 
@@ -97,7 +98,7 @@ if (n3 < totalPlants1){
  const newGardenarea = newPlants * minSpace ;
  console.log(newGardenarea); // 80 sq.meters for week 1 in newgarden.
 
-
+ console.log("=================================")
 //calculate Total no of plants at the end of 10 weeks 
 //considering it doubles in each week
 
@@ -107,6 +108,8 @@ for  (i = 1 ; i < 10 ; i++) {
    console.log(a)
 }
  // 51200 plants
+
+ console.log("=================================")
 
 // calculate Area needed for the 51200 plants 
  const newPlants2 = 51200;
@@ -121,7 +124,8 @@ console.log(addSpace) // 40881.4625 sqm
 const newRadius = Math.sqrt(addSpace / PI);
 console.log(newRadius); //114.076
 
-
+//PART:3 Errors in Judgement
+//Use try and catch
 
 
 
