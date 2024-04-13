@@ -126,7 +126,18 @@ console.log(newRadius); //114.076
 
 //PART:3 Errors in Judgement
 //Use try and catch
+//original garden radius = 5 , week started 100 plants .
 
+try {
+	if (radius < 0) {
+		console.log("Negative!");
+	} else {
+		throw "Error - Not enough space.";
+	}
+} catch (error) {
+	console.log(error);
+}
 
+console.log("plants exceeds the amount of space available");
 
 
